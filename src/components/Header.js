@@ -1,4 +1,5 @@
 import React from 'react';
+// added proptypes for validation on props
 import PropTypes from 'prop-types';
 
 const Header = props => {
@@ -23,11 +24,11 @@ const Header = props => {
     </div>
   );
 };
-
+// default props
 Header.defaultProps = {
   branding: 'My App'
 };
-
+// validating props
 Header.propTypes = {
   branding: PropTypes.string.isRequired
 };
